@@ -1,0 +1,35 @@
+.category-navigation,
+.todo-list {
+  height: 500px;
+  overflow-y: scroll;
+  margin-top: 10px;
+}
+
+.category-navigation {
+  & .category-container {
+    border: 1px solid #000000;
+     padding: 0;
+    & .category {
+      padding: 5px;
+    }
+  }
+}
+
+.todo-list {
+  .todo-item {
+    border: 1px solid #000000;
+    span {     
+      font-size: 24px;
+    }
+    i {
+      margin: 7px 0;
+      font-size: 15px;
+    }
+    input {
+      margin: 10px 0;
+    }
+    .todo-item-content{
+        padding: 15px 0;
+    }
+  }
+}

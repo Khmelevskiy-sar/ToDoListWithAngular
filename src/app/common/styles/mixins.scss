@@ -1,0 +1,23 @@
+﻿////
+/// Mixins
+/// @group Mixins
+////
+
+@import 'variables.scss';
+@import "colors.scss";
+
+/// Adding to element width according to column count
+@mixin col-width($columnscount) {
+ width: $col-width * $columnscount;
+}
+
+@mixin desktop() {
+ @media (min-width: $screen-small) { @content; }
+}
+
+@mixin prop($name, $valueMobile, $valueDesktop) {
+ #{$name}: $valueMobile;
+ @include desktop {
+  #{$name}: $valueDesktop;
+ }
+}

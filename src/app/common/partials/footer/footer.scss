@@ -1,0 +1,10 @@
+﻿@import '../../styles/colors.scss';
+
+.page-footer-partial {
+	border-top: 1px solid $c-alto;
+	padding: 20px 0;
+
+	a {
+		color: $c-dove-gray;
+	}
+}

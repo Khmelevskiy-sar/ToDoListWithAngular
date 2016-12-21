@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<testsuite name="PhantomJS 2.1.1 (Windows 8 0.0.0)" package="Unit Tests" timestamp="2016-08-05T09:54:36" id="0" hostname="EPRUSARW0785" tests="31" errors="0" failures="0" time="0.394">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1"/>
+  </properties>
+  <testcase name="should NOT set invalid state for input if validation function returns true" time="0.062" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.coValidation"/>
+  <testcase name="should set invalid state for input if validation function returns false and set proper invalid type class" time="0.01" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.coValidation"/>
+  <testcase name="should be correctly created" time="0.012" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.coFullName"/>
+  <testcase name="should correctly combine firstName and lastName from the object" time="0.009" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.coFullName"/>
+  <testcase name="should correctly combine firstName and lastName and optional middleName" time="0.004" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.coFullName"/>
+  <testcase name="should return nothing if user is incorrect" time="0.003" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.coFullName"/>
+  <testcase name="should correctly set &lt;strong> tags to highlight text fragments at the beginning of the words in text" time="0.004" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.coTypeaheadHighlight"/>
+  <testcase name="should return current date" time="0.003" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.dateService"/>
+  <testcase name="should return short week day names array" time="0.004" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.dateService"/>
+  <testcase name="should return short month names array" time="0.003" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.dateService"/>
+  <testcase name="should search industries by term" time="0.012" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.industriesService"/>
+  <testcase name="should load components" time="0.174" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.lazyLoaderService"/>
+  <testcase name="should NOT load the same component twice but get it from cache" time="0.006" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.lazyLoaderService"/>
+  <testcase name="should query projects list" time="0.01" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.projectsService"/>
+  <testcase name="should create project" time="0.01" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.projectsService"/>
+  <testcase name="should correctly getUrlParam" time="0.005" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.urlHelper"/>
+  <testcase name="should correctly insertParam to current url" time="0.003" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.urlHelper"/>
+  <testcase name="should initialize" time="0.006" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.newProjectCtrl"/>
+  <testcase name="should searchIndustries by term" time="0.005" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.newProjectCtrl"/>
+  <testcase name="should clear industry" time="0.004" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.newProjectCtrl"/>
+  <testcase name="should add industry" time="0.004" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.newProjectCtrl"/>
+  <testcase name="should add not existing industry to the top" time="0.005" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.newProjectCtrl"/>
+  <testcase name="should not add existing industry" time="0.003" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.newProjectCtrl"/>
+  <testcase name="should remove industry" time="0.003" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.newProjectCtrl"/>
+  <testcase name="should prevent invalid project from saving" time="0.004" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.newProjectCtrl"/>
+  <testcase name="should activate() load projects list at start" time="0.005" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.projectsCtrl"/>
+  <testcase name="should redirect to project details by click with id === 1" time="0.004" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.projectsCtrl"/>
+  <testcase name="should redirect to project details by click with id === 2" time="0.003" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.projectsCtrl"/>
+  <testcase name="should propperly initialize" time="0.004" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.shellCtrl"/>
+  <testcase name="should close menu" time="0.006" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.shellCtrl"/>
+  <testcase name="should toggle menu on locationChangeStart (page redirect)" time="0.004" classname="PhantomJS_2_1_1_(Windows_8_0_0_0).Unit Tests.shellCtrl"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

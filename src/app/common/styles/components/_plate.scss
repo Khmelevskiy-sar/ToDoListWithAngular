@@ -1,0 +1,69 @@
+﻿/// base plate for all occurence on site
+.plate {
+	background-color: $c-white;
+	margin: 10px 0;
+	font-size: 16px;
+	box-shadow: 2px 2px 2px 0px $c-alto;
+
+	.plate-header {
+		padding: 8px 10px;
+		height: 50px;
+		border: 1px solid $c-alto;
+
+		&:hover {
+			background-color: $c-concrete;
+		}
+
+		a {
+			font-family: 'Arial Bold', Arial;
+			font-size: 24px;
+			font-weight: 700;
+			text-decoration: none;
+			color: $c-mine-shaft;
+			display: block;
+		}
+	}
+
+	.plate-body {
+		padding: 10px;
+		cursor: pointer;
+		border: 1px solid $c-alto;
+
+		&:hover {
+			border: 2px solid $c-monza;
+			padding: 9px;
+		}
+	}
+
+	.plate-extra {
+		overflow: hidden;
+		border: 1px solid $c-alto;
+		border-top: none;
+		border-bottom: none;
+
+		.wrapper { //trick to fix collapse animation animation issue https://github.com/angular-ui/bootstrap/issues/3080
+			padding: 10px;
+		}
+
+		.bottom-bordered {
+			border-bottom: 1px solid  $c-silver;
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+		}
+
+	}
+
+	.plate-footer {
+		.btn {
+			padding: 8px;
+
+			@media (max-width: $screen-small) {
+				text-align: left;
+				display: block;
+				margin: 0;
+				border-top: 0;
+				width: 100%;
+			}
+		}
+	}
+}
