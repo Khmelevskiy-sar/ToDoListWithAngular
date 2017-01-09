@@ -1,0 +1,45 @@
+<div ng-if="!vm.toggle">
+  <div class="row">
+    <div class="col-xs-6 pull-right">
+      <div class="input-group">
+        <input type="text" class="form-control" ng-model="vm.newName" placeholder="Text input whith button">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="button" ng-disabled="!vm.newName" ng-click="vm.addTask()">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tasks-list row">
+    <div class="task-item" ng-repeat="task in tasks">
+      <input type="checkbox" ng-model="task.implementations" ng-click="vm.update(task)" />
+      <span class="task-name">{{task.name}}</span>
+      <button class="task-edit-button pull-right" ng-click="vm.openTaskEditer(task)">
+    <i class="glyphicon glyphicon-edit"></i>
+    </button>
+    </div>
+  </div>
+</div>
+<div ng-if="vm.toggle" class="task-editor row">
+  <div class="row">
+    <div class="pull-right">
+      <button type="button" class="btn btn-default btn-sm">Save changes</button>
+      <button type="button" class="btn btn-default btn-sm">Cancel</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4 task-editor-field">
+      <input class="form-control" type="text" value="{{vm.editTask.name}}" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <input type="checkbox" ng-model="vm.editTask.implementations" id="doneChkbx" />
+      <lable for="doneChkbx">Done</lable>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <textarea rows="20" class="form-control"></textarea>
+    </div>
+  </div>
+</div>

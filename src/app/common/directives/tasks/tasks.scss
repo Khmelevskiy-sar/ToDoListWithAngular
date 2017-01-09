@@ -1,0 +1,22 @@
+.tasks-list {
+  height: 500px;
+  overflow-y: scroll;
+  margin-top: 10px;
+  .task-item {
+    border: 1px solid #000000;
+    padding: 25px 10px;
+    .task-name {
+      font-size: 25px;
+      padding: 0 15px;
+    }
+    .task-edit-button {
+      margin: 5px 0;
+    }
+  }
+}
+
+.task-editor {
+  .task-editor-field {
+    margin-top: 20px;
+  }
+}

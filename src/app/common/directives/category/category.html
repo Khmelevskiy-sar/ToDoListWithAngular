@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-xs-9">
+    <div class="input-group">
+      <input type="text" class="form-control" ng-model="vm.nameNewCategory" placeholder="Enter category title">
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="button" ng-disabled="!vm.nameNewCategory" ng-click="vm.addCategory()">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="category-list row">
+  <ul class="category-group col-xs-12">
+    <li ng-repeat="data in category track by $index" ng-include="'app/common/partials/categoryElement/categoryElement.html'">
+    </li>
+  </ul>
+</div>

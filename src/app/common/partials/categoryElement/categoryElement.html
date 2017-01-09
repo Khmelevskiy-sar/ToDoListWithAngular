@@ -1,0 +1,23 @@
+<div class="category-group-item">
+  <span class="accordion-arrow"  ng-click="vm.showSubcategory(data)">
+  <i class="glyphicon glyphicon-menu-down" aria-hidden="true"></i>
+  </span>
+  <div class="category-name" ng-if="!(vm.editedCategory.id === data.id)" ng-click="vm.changeCurentCategory(data.id)">
+    <span>{{data.name}}</span>
+  </div>
+  <input ng-if="vm.editedCategory.id === data.id" type="text" ng-model="data.name" my-enter="vm.update(data.id, data.name)">
+  <button ng-if="!(vm.editedCategory.id === data.id)" ng-click="vm.showNameInput(data)">
+    <i class="glyphicon glyphicon-edit"></i>
+    </button>
+  <div class="category-btn-group">
+    <button ng-click="vm.delete(data.id)">
+    <i class="glyphicon glyphicon-trash"></i>
+    </button>
+    <button ng-click="vm.addSubcategory(data.id)">
+    <i class="glyphicon glyphicon-plus"></i>
+    </button>
+  </div>
+</div>
+<ul class="sub-category-group row" ng-if="data.subCategory.length">
+  <li class=" col-xs-11 col-xs-push-1" ng-repeat="data in data.subCategory track by $index" ng-include="'app/common/partials/categoryElement/categoryElement.html'"></li>
+</ul>

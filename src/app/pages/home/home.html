@@ -1,0 +1,17 @@
+<div class="row">
+  <!--left-column-->
+  <div class="col-xs-4">
+    <my-category category="vm.category" on-category-select="vm.getTasks(id)" update-category="vm.updateCategory(id, name)" add-category="vm.addCategory(id,name)"
+      , add-subcategory="vm.addCategory(id,name)" delete-category="vm.deleteCategory(id)"></my-category>
+  </div>
+  <!--/left-column-->
+  <!--right-column-->
+  <div class="col-xs-8">
+    <my-tasks tasks="vm.tasks" curent-category-id="" add-task="vm.addTask(idOwner, name)">
+    </my-tasks>
+  </div>
+  <!--<div todo-list>
+  </div>-->
+</div>
+<!--/right-column-->
+</div>

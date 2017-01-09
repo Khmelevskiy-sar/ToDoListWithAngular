@@ -15,13 +15,13 @@
         controllerAs: 'vm',
         templateUrl: 'app/pages/shell.html'
       })
-      .state('shell.category', {
-        url: '/category',
-        templateUrl: 'app/pages/category/category.html',
-        controller: 'categoryCtrl',
+      .state('shell.home', {
+        url: '/home',
+        templateUrl: 'app/pages/home/home.html',
+        controller: 'homeCtrl',
         controllerAs: 'vm',
-        title: 'Category List'
+        title: 'Home'
       });
-    $urlRouterProvider.otherwise('/projects');
+    $urlRouterProvider.otherwise('/home');
   }
 }());
